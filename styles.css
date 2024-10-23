@@ -1,0 +1,231 @@
+/* General reset and styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0d0f27;
+    color: #fff;
+    transition: background-color 0.5s ease;
+}
+
+/* Dark Mode styling */
+body.dark-mode {
+    background-color: #181818;
+    color: #ddd;
+}
+
+/* General styling for headers, footers, and sections */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color: #fff;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0288d1;
+    border-radius: 5px;
+}
+
+#dark-mode-toggle {
+    background-color: #03a9f4;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0288d1;
+}
+
+footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #111;
+}
+
+footer p {
+    margin: 0;
+    color: #bbb;
+}
+
+/* Hero section for index.html */
+.hero {
+    height: 90vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 80px;
+    color: #fff;
+}
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: 5px solid #fff;
+}
+
+.profile h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 1.5em;
+    color: #03a9f4;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0288d1;
+}
+
+/* Gradient/Solid Color Change */
+.cta-button:active {
+    background: linear-gradient(135deg, #0288d1, #03a9f4);
+    transition: background-color 0.2s;
+}
+
+/* Section styling */
+section {
+    padding: 100px 0;
+}
+
+.services, .portfolio, .faq, .contact {
+    background-color: #131537;
+    text-align: center;
+}
+
+.about {
+    background-color: #1e213d;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.about h2, .services h2, .portfolio h2, .faq h2, .contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p, .services p, .portfolio p, .faq p, .contact p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Contact info styling */
+.contact-info strong {
+    color: #03a9f4;
+}
+
+.contact-info a {
+    color: #03a9f4;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0288d1;
+    text-decoration: underline;
+}
+
+/* Add dark mode specific adjustments */
+.about.dark-mode, .services.dark-mode, .portfolio.dark-mode, .faq.dark-mode, .contact.dark-mode {
+    background-color: #242424;
+}
+
+
+
+/* See More Section Styling */
+.see-more-section {
+    padding: 100px 0;
+    background-color: #1e213d;
+    text-align: center;
+    color: #fff;
+}
+
+.see-more-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.see-more-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.see-more-section .cta-button {
+    padding: 15px 30px;
+    background-color: #03a9f4;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.see-more-section .cta-button:hover {
+    background-color: #0288d1;
+}
+
+/* About Section Styling */
+.about-section {
+    padding: 100px 0;
+    background-color: #131537;
+    text-align: center;
+    color: #fff;
+}
+
+.about-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.about-section.dark-mode {
+    background-color: #242424;
+}
